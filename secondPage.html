@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Main page</title>
+    <link rel="stylesheet" href="secondPageStyle.css"/>
+
+</head>
+
+<body>
+<h1>Click on the button to start the quiz</h1>
+
+<input type="submit" id="btton2" value="Start the game" onclick="showQuestion()">
+<form action="main.html">
+    <input type="submit" value="return to the main page" id="button1"> <br/>
+</form>
+
+    <div id="div1">
+        <h2>Question number 1:</h2>
+        <p>How old would you be if you didn't know how old you are?</p>
+        <input type="radio" id="option1" name="ye" onclick="result()">
+        <label for="100">100 years old</label><br>
+        <input type="radio" id="option2" name="ye" onclick="result()">
+        <label for="50">50 years old</label><br>
+        <input type="radio" id="option3" name="ye" onclick="result()">
+        <label for="20">20 years old</label><br /> <br />
+        <p id="result"></p>
+
+        <input type="submit" id="nextquestion" value="next" onclick="showQuestion2()">
+    </div>
+
+    <div id="div2">
+        <h2>Question number 2:</h2>
+        <p>What is the capital city of spain?</p>
+        <input type="radio" id="option4" name="ye" onclick="result2()">
+        <label for="100">Madrid</label><br>
+        <input type="radio" id="option5" name="ye" onclick="result2()">
+        <label for="50">Spain</label><br>
+        <input type="radio" id="option6" name="ye" onclick="result2()">
+        <label for="20">Mars</label><br /> <br />
+        <p id="result2"></p>
+        
+        <input type="submit" id="previousquestion" value="previous" onclick="perviousQuestion()">
+        <input type="submit" id="nextquestion" value="next" onclick="showQuestion3()">
+    </div>
+
+    <div id="div3">
+        <h2>Question number 3:</h2>
+        <p>Who took the picture of the first camera?</p>
+        <input type="radio" id="option7" name="ye" onclick="result3()">
+        <label for="100">Camera man</label><br>
+        <input type="radio" id="option8" name="ye" onclick="result3()">
+        <label for="50">Camera</label><br>
+        <input type="radio" id="option9" name="ye" onclick="result3()">
+        <label for="20">Random guy</label><br /> <br />
+
+        
+        <input type="submit" id="previousquestion" value="previous" onclick="perviousQuestion3()">
+        <input type="submit" id="nextquestion" value="next" onclick="showQuestion4()">
+    </div>
+
+    <div id="div4">
+        <h2>Question number 4:</h2>
+        <p>What is the capital city of Canada</p>
+        <input type="radio" id="option10" name="ye" onclick="result4()">
+        <label for="100">Toronto</label><br>
+        <input type="radio" id="option11" name="ye" onclick="result4()">
+        <label for="50">Ottawa</label><br>
+        <input type="radio" id="option12" name="ye" onclick="result4()">
+        <label for="20">Montreal</label><br /> <br />
+
+        
+        <input type="submit" id="previousquestion" value="previous" onclick="perviousQuestion4()">
+        <input type="submit" id="nextquestion" value="finish" onclick="score()">
+    </div>
+
+    <div id="output"></div>
+    
+    <script src="engine.js"></script>
+        
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,32 @@
+h1{
+    color: blue;
+}
+
+body {
+    text-align: center;
+    background-color: yellowgreen;
+}
+form {
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid blue;
+    padding: 2rem;
+}
+label{
+    display: block;
+    margin: 1rem 0;
+}
+input{
+    display: block;
+    width: 100%;
+}
+#submit{
+    border: 0;
+    background:rgb(135, 195, 222);
+    padding: 0.5rem;
+    color: blue;
+    margin: 1rem 0;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
